@@ -61,6 +61,9 @@ app.use(bodyParser.urlencoded({extended: true}));
     
 // })
 
+
+// console.log("test");
+
 app.get('/hello', (req, res)=>{
     return res.json({message: req.query});
 })
