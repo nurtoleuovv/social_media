@@ -8,6 +8,10 @@ router
     
     .get("/", controller.getAllProducts)
     
-    .get("/:id", controller.getProductById);
+    .get("/:id", controller.getProductById)
+
+    .put('/:id', controller.updateProduct)
+
+    .delete('/:id', controller.deleteProductById)
 
 module.exports = router;
